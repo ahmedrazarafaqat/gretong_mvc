@@ -1,0 +1,6 @@
+﻿@model IEnumerable<Gretong_MVC.Category> 
+
+@foreach (var item in Model)
+{
+    <li id="menu-academico"><a href="@Url.Action("Index", "Products", new { categoryid = item.Id })"><i class="fa fa-file-text-o"></i> <span>@item.Name</span></a></li>       
+}
